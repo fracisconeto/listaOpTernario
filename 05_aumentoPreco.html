@@ -8,11 +8,15 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    const preço = parseFloat(prompt("informe o preço do produto? ")).trim().replace(",",".")
 
     //Processamento
+let final = (preço <= 280) ? `o preço final do produto é $ ${preço * 0.20}`
+: (preço <= 700) ? `o preço  final do produto é $ ${preço * 0.15}`
+: (preço <= 1500) ? `o preço final do produto é ${preço * 0.10}`
+: `o preço do produto é de $ ${preço * 0.5}`
 
     
     //Saída
-
+alert (final)
 </script>
